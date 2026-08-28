@@ -29,7 +29,7 @@ int main(){
 			evens += y[i];
 		}	
 	}
-	I = (h/3)*((y[0]+y[n]) + 2*(odds) + 4*(evens));
+	I = (h/3)*((y[0]+y[n]) + 2*(evens) + 4*(odds));   //(h/3)*((y[0]+y[n]) + 2*(odds) + 4*(evens));
 	cout<<"the answer is: "<<I;
 	return 0;
 }
