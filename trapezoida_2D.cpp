@@ -3,7 +3,7 @@
 using namespace std;              // lower upper is 0 2, int(1/16+x^2)
 
 double f(double x, double y){
-	double exp = 1/(x + y);
+	double exp = 1.0/(x + y);
 	return exp;
 }
 
@@ -17,7 +17,7 @@ int main(){
 	cin>> c>>d;
 	cout<<"Enter the number of intervals (n m): "<<endl;
 	cin>> n>>m;
-	double y[n][m];
+	double y[n+1][m+1];
 
 	double h = (b-a)/n;
 	double k = (d-c)/m;
